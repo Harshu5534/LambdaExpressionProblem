@@ -10,6 +10,7 @@ namespace PersonDataManagement
             Console.WriteLine("-------Welcome To Person Data Management Program------");
             PersonManagement management = new PersonManagement();
             management.AddDefaultData();
+            management.GetTopRecords();
         }
     }
 }
