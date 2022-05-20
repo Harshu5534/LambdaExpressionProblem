@@ -9,7 +9,7 @@ namespace PersonDataManagement
             Console.WriteLine("-------Welcome To Person Data Management Program------");
             PersonManagement management = new PersonManagement();
             bool end = true;
-            Console.WriteLine("1.GetTopTwoRecords\n2.GetRecordsBetween13to18\n3.AvarageRecords\n4.NamePresentOrNot\n5.SkipRecord\n6.End Of The Program");
+            Console.WriteLine("1.GetTopTwoRecords\n2.GetRecordsBetween13to18\n3.AvarageRecords\n4.NamePresentOrNot\n5.SkipRecord\n6.RemoveRecordInList\n7.End Of The Program");
             while (end)
             {
                 Console.WriteLine("\nEnter Option For Exicute The Program");
@@ -37,6 +37,10 @@ namespace PersonDataManagement
                         management.SkipRecords();
                         break;
                     case 6:
+                        management.AddDefaultData();
+                        management.RemoveRecords();
+                        break;
+                    case 7:
                         end = false;
                         Console.WriteLine("Program Is Ended.");
                         break;

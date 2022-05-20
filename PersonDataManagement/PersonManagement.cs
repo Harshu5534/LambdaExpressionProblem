@@ -60,5 +60,11 @@ namespace PersonDataManagement
             var Result = this.personList.Skip(this.personList.Where(x => x.Age < 60).Count());
             Display(Result);
         }
+        public void RemoveRecords()
+        {
+            Person Result = this.personList.Find(x => x.Name == "Harshu");
+            this.personList.Remove(Result);
+            Display(this.personList);
+        }
     }
 }
